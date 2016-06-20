@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+	<title>Advaned Javascript</title>
+	<script type="text/javascript">
+		function Car(make,model,year)
+		{
+			this.make=make;
+			this.model=model;
+			this.year=year;
+		}
+		(function (){
+						var ferrari=new Car('Ferrari','Dino',1970);
+						var gallardo=new Car('Lamborgini','Gallardo',2005);
+						alert(ferrari.make);
+						alert(ferrari.model);
+						alert(ferrari.year);
+						alert(gallardo.make);
+						alert(gallardo.model);
+						alert(gallardo.year);
+		})();
+		(function(){
+						var b=1673;
+						var a=1735;
+						function addition(a,b)
+						{
+							this.add=a+b;
+							return add;
+						}
+						function subtract(a,b)
+						{
+							this.sub=a-b;
+							return sub;
+						}
+						function multiply(a,b)
+						{
+							this.mul=a*b;
+							return mul;
+						}
+						function divide(a,b)
+						{
+							this.div=a/b;
+							return div;
+						}
+						alert(addition(a,b));
+						alert(subtract(a,b));
+						alert(multiply(a,b));
+						alert(divide(a,b));
+		})();
+	</script>
+</head>
+<body onload="">
+
+</body>
+</html>

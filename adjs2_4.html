@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+	<title>Advanced Javascript</title>
+	<script type="text/javascript">
+					function person(nam, age)
+					{
+						this.nam=nam;
+						this.age=age;
+					}
+					person.prototype.eats='food';
+					var gaurav=new person('gaurav','22');		
+					function student()
+					{
+					}
+					student.prototype=gaurav;
+					student.prototype.eats='junk food';
+					console.log(gaurav.eats);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
