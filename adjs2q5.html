@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Closures</title>
+	<script type="text/javascript">
+		(function(){
+					function outer()
+					{
+						var a=1485;
+						return function inner()
+								{
+									var b=4632;
+									return a+"*"+b+"="+(a*b);
+								}
+					}
+					var display=outer();
+					alert(display());
+		})();
+	</script>
+</head>
+<body>
+
+</body>
+</html>

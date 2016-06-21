@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advanced Javascript</title>
+	
+</head>
+<body>
+<form>
+	<input type="text" id="fnamef" disabled><br>
+	<input type="text" id="lnamef" disabled><br>
+	<input type="text" id="email" disabled><br>
+	<input type="text" id="phone" disabled><br>
+	<input type="Submit" id="button"><br>
+</form>
+<script type="text/javascript">
+		(function(){
+					function person(fname,lname,email,phone)
+					{
+						this.fname=fname;
+						this.lname=lname;
+						this.email=email;
+						this.phone=phone;
+					}
+					var Wolverine=new person('Logan','Khurana','logukurana786@gmail.com',9897969594);
+					document.getElementById('fnamef').value=Wolverine.fname;
+					document.getElementById('lnamef').value=Wolverine.lname;
+					document.getElementById('email').value=Wolverine.email;
+					document.getElementById('phone').value=Wolverine.phone;
+		})();
+	</script>
+</body>
+</html>
